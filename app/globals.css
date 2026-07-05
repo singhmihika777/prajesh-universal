@@ -1,0 +1,475 @@
+@import "tailwindcss";
+
+/* ========================================
+   prajesh UNIVERSAL DESIGN SYSTEM
+======================================== */
+
+:root {
+  --background: #0b0b0b;
+  --surface: #121212;
+  --surface-light: #1a1a1a;
+
+  --text: #ffffff;
+  --text-light: #d8d8d8;
+  --text-muted: #8d8d8d;
+
+  --accent: #c9a96e;
+  --accent-light: #d8bb85;
+
+  --border: rgba(255,255,255,.08);
+
+  --navbar-height: 90px;
+
+  --transition: .45s ease;
+}
+
+/* ========================================
+   RESET
+======================================== */
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+*::before,
+*::after{
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  background:var(--background);
+  color:var(--text);
+  overflow-x:hidden;
+  font-family:var(--font-body);
+  -webkit-font-smoothing:antialiased;
+  text-rendering:optimizeLegibility;
+}
+
+img{
+  display:block;
+  width:100%;
+}
+
+video{
+  display:block;
+}
+
+a{
+  text-decoration:none;
+  color:inherit;
+}
+
+button{
+  cursor:pointer;
+  font:inherit;
+  border:none;
+  background:none;
+}
+
+/* ========================================
+   TYPOGRAPHY
+======================================== */
+
+h1,h2,h3,h4,h5,h6{
+  font-family:var(--font-heading);
+  font-weight:500;
+}
+
+h1{
+  font-size:clamp(3rem,8vw,7rem);
+  line-height:1;
+  letter-spacing:-2px;
+}
+
+h2{
+  font-size:clamp(2.4rem,6vw,5rem);
+  line-height:1.05;
+}
+
+h3{
+  font-size:2rem;
+}
+
+p{
+  line-height:1.9;
+  color:var(--text-light);
+}
+
+/* ========================================
+   LAYOUT
+======================================== */
+
+.container-custom{
+  width:min(1280px,92%);
+  margin-inline:auto;
+}
+
+.section{
+  padding:140px 0;
+}
+
+.section-title{
+  font-size:clamp(2.5rem,6vw,5rem);
+  margin-bottom:24px;
+}
+
+.section-subtitle{
+  color:var(--accent);
+  text-transform:uppercase;
+  letter-spacing:5px;
+  font-size:.82rem;
+  margin-bottom:18px;
+}
+
+.max-text{
+  max-width:650px;
+}
+
+/* ========================================
+   NAVBAR
+======================================== */
+
+.navbar{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  z-index:100;
+  transition:.5s;
+}
+
+.navbar.scrolled{
+  background:rgba(8,8,8,.72);
+  backdrop-filter:blur(18px);
+  border-bottom:1px solid rgba(255,255,255,.08);
+}
+
+/* ========================================
+   HERO
+======================================== */
+
+.hero{
+  position:relative;
+  height:100vh;
+  overflow:hidden;
+}
+
+.hero video{
+
+position:absolute;
+
+inset:0;
+
+width:100%;
+
+height:100%;
+
+object-fit:cover;
+
+transform:scale(1.05);
+
+filter:brightness(.55);
+
+}
+
+/*.hero-overlay{
+  position:absolute;
+  inset:0;
+  background:
+      linear-gradient(
+      to bottom,
+      rgba(0,0,0,.45),
+      rgba(0,0,0,.62)
+      );
+}*/
+
+.hero-content{
+
+  position:relative;
+  z-index:10;
+
+  height:100%;
+
+  display:flex;
+  flex-direction:column;
+
+  justify-content:center;
+  align-items:center;
+
+  text-align:center;
+
+  width:min(900px,90%);
+  margin:auto;
+
+}
+
+.hero-tag{
+
+  text-transform:uppercase;
+  letter-spacing:7px;
+
+  color:var(--accent);
+
+  margin-bottom:18px;
+
+  font-size:.82rem;
+
+}
+
+.hero-heading{
+
+  margin-bottom:26px;
+
+}
+
+.hero-description{
+
+  max-width:700px;
+
+  font-size:1.05rem;
+
+  color:#d4d4d4;
+
+}
+
+.company-name{
+
+  margin-top:55px;
+
+  font-family:var(--font-heading);
+
+  letter-spacing:12px;
+
+  color:var(--accent);
+
+  font-size:clamp(2rem,4vw,3.8rem);
+
+}
+
+/* ========================================
+   SCROLL INDICATOR
+======================================== */
+
+.scroll-indicator{
+
+position:absolute;
+
+left:50%;
+
+bottom:45px;
+
+transform:translateX(-50%);
+
+display:flex;
+
+flex-direction:column;
+
+align-items:center;
+
+gap:10px;
+
+z-index:10;
+
+}
+
+.scroll-line{
+
+width:1px;
+
+height:70px;
+
+background:white;
+
+animation:scrollLine 1.8s infinite;
+
+}
+
+@keyframes scrollLine{
+
+0%{
+
+opacity:0;
+
+transform:translateY(0);
+
+}
+
+50%{
+
+opacity:1;
+
+}
+
+100%{
+
+opacity:0;
+
+transform:translateY(18px);
+
+}
+
+}
+
+/* ========================================
+   BUTTON
+======================================== */
+
+.primary-btn{
+
+display:inline-flex;
+
+align-items:center;
+
+justify-content:center;
+
+padding:16px 34px;
+
+border:1px solid rgba(255,255,255,.15);
+
+margin-top:40px;
+
+transition:.4s;
+
+text-transform:uppercase;
+
+letter-spacing:4px;
+
+font-size:.8rem;
+
+}
+
+.primary-btn:hover{
+
+background:var(--accent);
+
+color:black;
+
+}
+
+/* ========================================
+   IMAGE
+======================================== */
+
+.image-wrap{
+
+overflow:hidden;
+
+border-radius:24px;
+
+}
+
+.image-wrap img{
+
+transition:1s;
+
+}
+
+.image-wrap:hover img{
+
+transform:scale(1.08);
+
+}
+
+/* ========================================
+   SECTION SPACING
+======================================== */
+
+.space-xl{
+
+padding-top:180px;
+
+padding-bottom:180px;
+
+}
+
+/* ========================================
+   SCROLLBAR
+======================================== */
+
+::-webkit-scrollbar{
+
+width:8px;
+
+}
+
+::-webkit-scrollbar-track{
+
+background:#111;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+background:#444;
+
+border-radius:10px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+background:#666;
+
+}
+
+/* ========================================
+   TEXT SELECTION
+======================================== */
+
+::selection{
+
+background:var(--accent);
+
+color:black;
+
+}
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media(max-width:900px){
+
+.hero-content{
+
+width:92%;
+
+}
+
+.company-name{
+
+letter-spacing:6px;
+
+font-size:2rem;
+
+}
+
+.section{
+
+padding:90px 0;
+
+}
+
+}
+
+@media(max-width:640px){
+
+.hero-description{
+
+font-size:.95rem;
+
+}
+
+.hero-tag{
+
+letter-spacing:5px;
+
+}
+
+}
