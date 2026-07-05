@@ -1,0 +1,25 @@
+.navbar {
+  position: fixed;
+  inset: 0 0 auto 0;
+  z-index: 100;
+  transition: all .35s ease;
+  background: rgba(10,10,10,.55);
+  backdrop-filter: blur(16px);
+}
+
+.navbar.scrolled{
+  background: rgba(10,10,10,.90);
+}
+
+.navbar a{
+  color:white;
+  text-decoration:none;
+  font-size:.9rem;
+  letter-spacing:4px;
+  text-transform:uppercase;
+  transition:.3s;
+}
+
+.navbar a:hover{
+  color:#D4AF37;
+}
