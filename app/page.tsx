@@ -7,6 +7,7 @@ import useLenis from "@/hooks/useLenis";
 import Services from "@/components/Services/Services";
 import WhyUs from "@/components/WhyUs/WhyUs";
 import Contact from "@/components/Contact/Contact";
+import Footer from "@/components/Footer/Footer";
 
 export default function Home() {
   useLenis();
@@ -20,6 +21,7 @@ export default function Home() {
       <WhyUs />
       {/* <Team /> */}
       <Contact />
+      <Footer />
     </main>
   );
 }
