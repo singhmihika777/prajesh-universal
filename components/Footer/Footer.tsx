@@ -16,11 +16,11 @@ export default function Footer() {
 
           <div>
 
-            <h2 className="font-heading text-4xl tracking-[8px] mb-6">
+            <h5 className="font-heading text-3xl tracking-[8px] mb-6">
               PRAJESH
               <br />
               UNIVERSAL
-            </h2>
+            </h5>
 
             <p className="text-gray-400 leading-8 max-w-md">
               A trusted Management & Consulting company helping
@@ -95,7 +95,9 @@ export default function Footer() {
                 </p>
 
                 <p className="mt-2">
-                  +91 XXXXXXXXXX
+                  +91 90314 28911
+<br />
++91 87574 94893
                 </p>
               </div>
 
@@ -105,7 +107,7 @@ export default function Footer() {
                 </p>
 
                 <p className="mt-2">
-                  contact@prajeshuniversal.com
+                  prajeshuni11@gmail.com
                 </p>
               </div>
 
@@ -115,7 +117,11 @@ export default function Footer() {
                 </p>
 
                 <p className="mt-2 leading-7">
-                  Your Office Address,
+                  Poornima Nikunj
+<br />
+In Front of St. Karen's School
+<br />
+Patna, Bihar 801503
                   <br />
                   India
                 </p>

@@ -7,7 +7,7 @@ import { gsap } from "@/lib/gsap";
 const directors = [
   {
     image: "/images/Bod1.jpeg",
-    name: "Mr. Rajesh Jha",
+    name: "Mr. Rajesh Kumar Jha",
     role: "Chairman & Managing Director",
     description:
       "With years of experience in management and higher education consulting, he has guided thousands of students and organizations toward sustainable growth. His leadership focuses on integrity, innovation and long-term relationships.",
@@ -72,7 +72,7 @@ export default function Team() {
           OUR LEADERSHIP
         </p>
 
-        <h2 className="team-title section-title text-center mb-24">
+        <h2 className="team-title font-heading text-5xl md:text-6xl text-center mb-20 leading-tight">
           Meet The Board
           <br />
           Of Directors
@@ -139,12 +139,12 @@ export default function Team() {
             OUR VISION
           </p>
 
-          <h2 className="font-heading text-5xl leading-tight mt-8">
+          <h5 className="font-heading text-2xl leading-tight mt-8">
             "Leadership is not about titles,
             <br />
             it's about creating impact
             and empowering people."
-          </h2>
+          </h5>
 
         </div>
 

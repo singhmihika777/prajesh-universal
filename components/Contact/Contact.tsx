@@ -77,40 +77,46 @@ export default function Contact() {
               from you.
             </p>
 
-            <div className="space-y-10">
+            <div className="space-y-12">
 
               <div>
 
-                <p className="text-xs tracking-[5px] uppercase text-[var(--accent)] mb-2">
+                <p className="text-[11px] uppercase tracking-[0.35em] text-white/45 mb-3 font-medium">
                   Phone
                 </p>
 
-                <h3 className="text-2xl font-heading">
-                  +91 XXXXX XXXXX
+                <h3 className="text-xl md:text-2xl font-heading leading-relaxed text-white/95">
+                  +91 90314 28911
+<br />
++91 87574 94893
                 </h3>
 
               </div>
 
               <div>
 
-                <p className="text-xs tracking-[5px] uppercase text-[var(--accent)] mb-2">
+                <p className="text-[11px] uppercase tracking-[0.35em] text-white/45 mb-3 font-medium">
                   Email
                 </p>
 
-                <h3 className="text-2xl font-heading">
-                  contact@prajeshuniversal.com
+                <h3 className="text-xl md:text-2xl font-heading leading-relaxed text-white/95">
+                  prajeshuni11@gmail.com
                 </h3>
 
               </div>
 
               <div>
 
-                <p className="text-xs tracking-[5px] uppercase text-[var(--accent)] mb-2">
+                <p className="text-[11px] uppercase tracking-[0.35em] text-white/45 mb-3 font-medium">
                   Office
                 </p>
 
-                <h3 className="text-2xl font-heading">
-                  Gurugram, Haryana
+                <h3 className="text-xl md:text-2xl font-heading leading-relaxed text-white/95">
+                  Poornima Nikunj
+<br />
+In Front of St. Karen's School
+<br />
+Patna, Bihar 801503
                 </h3>
 
               </div>
